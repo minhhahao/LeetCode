@@ -1,5 +1,7 @@
 package com.hazza.LeetCodeByJava;
 
+import com.hazza.LeetCodeByJava.datastructure.ListNode;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,14 +10,6 @@ import java.util.List;
  */
 
 public class No19RemoveNthNodeFromEndOfList {
-    private class ListNode {
-        int val;
-        ListNode next;
-        ListNode(int x) {
-            val = x;
-        }
-    }
-
     //solution 1
     public ListNode removeNthFromEnd(ListNode head, int n) {
         List<ListNode> nodes = new ArrayList<>();
