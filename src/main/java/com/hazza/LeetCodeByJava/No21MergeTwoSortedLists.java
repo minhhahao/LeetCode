@@ -3,7 +3,7 @@ package com.hazza.LeetCodeByJava;
 import com.hazza.LeetCodeByJava.datastructure.ListNode;
 
 /**
- * Created by hazza on 7/7/17.
+ * https://leetcode.com/problems/merge-two-sorted-lists/#/description
  */
 public class No21MergeTwoSortedLists {
 
