@@ -28,20 +28,8 @@ public class No21MergeTwoSortedLists {
             }
         }
 
-        if (l1 != null) {
-            while (l1 != null) {
-                temp.next = new ListNode(l1.val);
-                temp = temp.next;
-                l1 = l1.next;
-            }
-        }
-        if (l2 != null) {
-            while (l2 != null) {
-                temp.next = new ListNode(l2.val);
-                temp = temp.next;
-                l2 = l2.next;
-            }
-        }
+        if (l1 != null) temp.next = l1;
+        if (l2 != null) temp.next = l2;
 
         return res.next;
     }
