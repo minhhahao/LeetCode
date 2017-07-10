@@ -9,9 +9,7 @@ import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 
-/**
- * Created by hazza on 7/9/17.
- */
+
 public class No22Test {
 
     @Test

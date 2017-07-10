@@ -9,14 +9,7 @@ import static org.junit.Assert.assertEquals;
  * Created by hazza on 7/7/17.
  */
 public class No21Test {
-    public String outPutNodes(ListNode node) {
-        StringBuffer temp = new StringBuffer();
-        while (node != null) {
-            temp.append(node.val + " ");
-            node = node.next;
-        }
-        return temp.toString();
-    }
+
 
     @Test
     public void testBothEmpty() {
@@ -43,6 +36,6 @@ public class No21Test {
         node.next.next = new ListNode(3);
         node.next.next.next = new ListNode(4);
 
-        assertEquals(outPutNodes(node), outPutNodes(test.mergeTwoLists(node1, node2)));
+        assertEquals(ListNode.outPutNodes(node), ListNode.outPutNodes(test.mergeTwoLists(node1, node2)));
     }
 }
