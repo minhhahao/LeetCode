@@ -16,7 +16,6 @@ public class No10RegularExpressionMatching {
                 break;
             }
         }
-
         if (start == -1 || (start == lenP && lenS > 1)) return false;
 
         for (int i = 1; i < lenS; i++) {

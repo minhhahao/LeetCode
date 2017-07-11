@@ -8,6 +8,7 @@ import java.util.List;
  * https://leetcode.com/problems/generate-parentheses/#/description
  */
 public class No22GenerateParentheses {
+    //solution 1
     public List<String> generateParenthesis(int n) {
         List<String> res = new ArrayList<>();
         if (n < 1) return res;
@@ -24,6 +25,7 @@ public class No22GenerateParentheses {
         if (closeBrackets < openBrackets) insertBrackets(res, str + ')', openBrackets, closeBrackets + 1, max);
     }
 
+    //solution 2
     public List<String> generateParenthesis2(int n) {
         List<List<String>> lists = new ArrayList<>();
         lists.add(Collections.singletonList(""));
@@ -31,7 +33,6 @@ public class No22GenerateParentheses {
         for (int i = 1; i <= n; ++i)
         {
             final List<String> list = new ArrayList<>();
-
             for (int j = 0; j < i; ++j)
             {
                 for (final String first: lists.get(j))
@@ -42,10 +43,8 @@ public class No22GenerateParentheses {
                     }
                 }
             }
-
             lists.add(list);
         }
-
         return lists.get(lists.size() - 1);
     }
 
