@@ -9,6 +9,7 @@ import static org.junit.Assert.assertEquals;
  * Created by hazza on 7/11/17.
  */
 public class No24Test {
+
     @Test
     public void testEmpty() {
         No24SwapNodesInPairs test = new No24SwapNodesInPairs();
