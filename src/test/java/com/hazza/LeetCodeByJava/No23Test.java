@@ -5,7 +5,7 @@ import org.junit.Test;
 
 import static org.junit.Assert.assertEquals;
 
-public class TestNo23 {
+public class No23Test {
     @Test
     public void testEmpty() {
         No23MergeKSortedLists test = new No23MergeKSortedLists();
