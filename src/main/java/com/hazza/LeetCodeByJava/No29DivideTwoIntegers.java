@@ -61,5 +61,4 @@ public class No29DivideTwoIntegers {
         }
         return isNeg ? (int)-res : (int)Math.min(res, Integer.MAX_VALUE);
     }
-
 }
