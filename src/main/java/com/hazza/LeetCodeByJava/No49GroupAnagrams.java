@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * https://leetcode.com/problems/group-anagrams/discuss/
  */
-public class No59GroupAnagrams {
+public class No49GroupAnagrams {
     // solution 1
     public List<List<String>> groupAnagrams(String[] strs) {
         if (strs == null || strs.length == 0) return new ArrayList<>();
