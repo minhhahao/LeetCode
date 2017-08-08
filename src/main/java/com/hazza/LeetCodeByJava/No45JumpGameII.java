@@ -4,6 +4,7 @@ package com.hazza.LeetCodeByJava;
  * https://leetcode.com/problems/jump-game-ii/description/
  */
 public class No45JumpGameII {
+    //solution 1
     public int jump(int[] nums) {
         if (nums == null || nums.length < 2) return 0;
         int len = nums.length, preMax = 0, curMax= 0, steps = 0;
@@ -18,6 +19,7 @@ public class No45JumpGameII {
         return steps;
     }
 
+    //solution 2
     public int jump2(int[] nums) {
         if (nums == null || nums.length < 2) return 0;
         int len = nums.length;
