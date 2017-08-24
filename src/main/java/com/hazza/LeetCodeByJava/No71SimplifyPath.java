@@ -2,7 +2,7 @@ package com.hazza.LeetCodeByJava;
 
 import java.util.Deque;
 import java.util.LinkedList;
-import java.util.Stack;
+import java.util.queue;
 
 /**
  * Created with IntelliJ IDEA.
@@ -15,15 +15,12 @@ import java.util.Stack;
 public class No71SimplifyPath {
     public String simplifyPath(String path) {
         String[] symbols = path.split("/+");
-        Deque<String> stack = new LinkedList<>();
+        Deque<String> queue = new LinkedList<>();
         for (String s: symbols) {
-            if (s.equals("..") && !stack.isEmpty()) stack.pop();
-            else if (!s.equals(".") && !s.equals("") && !s.equals("..")) stack.push(s);
+            if (s.equals("..") && !queue.isEmpty()) queue.pollLast();
+            else if (!s.equals(".") && !s.equals("") && !s.equals("..")) queue.offerLast(s);
         }
 
-        StringBuilder sb = new StringBuilder();
-        while (!stack.isEmpty()) sb.append("/" + stack.pollLast());
-
-        return sb.length() == 0 ? "/" : sb.toString();
+        return "/" + String.join("/", queue);
     }
 }
