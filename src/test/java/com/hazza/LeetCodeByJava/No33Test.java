@@ -1,5 +1,6 @@
 package com.hazza.LeetCodeByJava;
 
+import org.junit.Before;
 import org.junit.Test;
 
 import static junit.framework.TestCase.assertEquals;
@@ -8,9 +9,15 @@ import static junit.framework.TestCase.assertEquals;
  * Created by hazza on 7/18/17.
  */
 public class No33Test {
+    No33SearchInRotatedSortedArray test;
+
+    @Before
+    public void setUp() {
+        test = new No33SearchInRotatedSortedArray();
+    }
+
     @Test
-    public void testSearch() {
-        No33SearchInRotatedSortedArray test = new No33SearchInRotatedSortedArray();
+    public void testLong() {
         int[] nums = {4, 5, 6, 8, 0 ,1, 2};
         assertEquals(0, test.search(nums, 4));
         assertEquals(1, test.search(nums, 5));
@@ -21,5 +28,12 @@ public class No33Test {
         assertEquals(6, test.search(nums, 2));
         assertEquals(-1, test.search(nums, 7));
         assertEquals(-1, test.search(nums, 3));
+    }
+
+    @Test
+    public void testTwo() {
+        int[] nums = {3, 1};
+        assertEquals(0, test.search(nums, 3));
+        assertEquals(1, test.search(nums, 1));
     }
 }
