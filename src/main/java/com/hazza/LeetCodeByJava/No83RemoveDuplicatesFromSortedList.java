@@ -11,6 +11,7 @@ import com.hazza.LeetCodeByJava.datastructure.ListNode;
  * Time: 10:31 AM
  */
 public class No83RemoveDuplicatesFromSortedList {
+    // solution 1
     public ListNode deleteDuplicates(ListNode head) {
         if (head == null) return head;
         ListNode prev = head;
@@ -23,5 +24,12 @@ public class No83RemoveDuplicatesFromSortedList {
         }
 
         return head;
+    }
+
+    // solution 2
+    public ListNode deleteDuplicates1(ListNode head) {
+        if (head == null || head.next == null) return head;
+        head.next = deleteDuplicates(head.next);
+        return head.val == head.next.val ? head.next : head;
     }
 }
