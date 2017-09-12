@@ -1,3 +1,5 @@
+package com.hazza.LeetCodeByJava;
+
 import com.hazza.LeetCodeByJava.No84LargestRectangleInHistogram;
 import org.junit.Before;
 import org.junit.Test;
