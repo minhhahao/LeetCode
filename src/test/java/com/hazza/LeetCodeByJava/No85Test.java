@@ -28,6 +28,7 @@ public class No85Test {
         matrix[1] = new char[]{'0', '0', '1', '1', '1', '0', '0'};
         matrix[2] = new char[]{'0', '1', '1', '1', '1', '1', '0'};
         assertEquals(6, test.maximalRectangle(matrix));
+        assertEquals(6, test.maximalRectangle1(matrix));
 
     }
 }

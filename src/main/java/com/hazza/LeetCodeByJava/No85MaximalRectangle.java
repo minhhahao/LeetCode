@@ -1,6 +1,7 @@
 package com.hazza.LeetCodeByJava;
 
 import java.util.Arrays;
+import java.util.Stack;
 
 /**
  * Created with IntelliJ IDEA.
@@ -11,6 +12,8 @@ import java.util.Arrays;
  * Time: 5:21 PM
  */
 public class No85MaximalRectangle {
+
+    // solution 1
     public int maximalRectangle(char[][] matrix) {
         if (matrix == null || matrix.length == 0|| matrix[0].length == 0) return 0;
         int rowLen = matrix.length, colLen = matrix[0].length;
@@ -43,6 +46,36 @@ public class No85MaximalRectangle {
                 maxArea = Math.max(maxArea, (right[j] - left[j]) * height[j]);
             }
         }
+        return maxArea;
+    }
+
+    // solution 2
+    public int maximalRectangle1(char[][] matrix) {
+        if (matrix == null || matrix.length == 0|| matrix[0].length == 0) return 0;
+        int rowLen = matrix.length, colLen = matrix[0].length;
+        int[] heights = new int[colLen + 1];
+        heights[colLen] = 0;
+        int maxArea = 0;
+
+        for (int i = 0; i < rowLen; i++) {
+            Stack<Integer> stack = new Stack<>();
+            for (int j = 0; j < colLen + 1; j++) {
+                if (j < colLen) {
+                    if (matrix[i][j] == '1') heights[j]++;
+                    else heights[j] = 0;
+                }
+                if (stack.isEmpty() || heights[stack.peek()] <= heights[j]) stack.push(j);
+                else {
+                    while (!stack.isEmpty() && heights[stack.peek()] > heights[j]) {
+                        int top = stack.pop();
+                        maxArea = Math.max(maxArea,
+                                    heights[top] * (stack.isEmpty() ? j : (j - stack.peek() - 1)));
+                    }
+                    stack.push(j);
+                }
+            }
+        }
+
         return maxArea;
     }
 }
