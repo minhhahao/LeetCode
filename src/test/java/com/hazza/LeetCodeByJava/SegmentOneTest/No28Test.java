@@ -14,7 +14,7 @@ public class No28Test {
     public void testEmpty() {
         No28ImplementStrStr test = new No28ImplementStrStr();
         String s1 = "", s2 = "";
-        assertEquals(-1, test.strStr(s1, s2));
+        assertEquals(0, test.strStr(s1, s2));
     }
 
     @Test
