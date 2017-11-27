@@ -36,6 +36,7 @@ public class No101Test {
         assertEquals(test.isSymmetric(root), test.isSymmetric1(root));
     }
 
+    @Test
     public void testNonSymmetriTree() {
         int[] pre = {1, 2, 3, 2, 3};
         int[] in = {2, 3, 1, 2, 3};

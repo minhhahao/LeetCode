@@ -22,10 +22,13 @@ public class No101SymmetricTree {
     }
 
     private boolean isSame(TreeNode leftPart, TreeNode rightPart) {
-        if (leftPart == null && rightPart == null) return true;
-        if (leftPart == null || rightPart == null || leftPart.val != rightPart.val) return false;
+        int nu = (leftPart == null ? 0 : 1) + (rightPart == null ? 0 : 1);
+        if (nu == 1) return false;
+        if (nu == 0) return true;
 
-        return isSame(leftPart.left, rightPart.right) && isSame(leftPart.right, rightPart.left);
+        return leftPart.val == rightPart.val &&
+                isSame(leftPart.left, rightPart.right) &&
+                isSame(leftPart.right, rightPart.left);
     }
 
     // Solution 2
