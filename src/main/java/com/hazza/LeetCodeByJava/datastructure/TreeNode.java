@@ -40,4 +40,11 @@ public class TreeNode {
             printTree(node.right, level + 1);
         }
     }
+
+    public static boolean treeEqual(TreeNode node1, TreeNode node2) {
+        if (node1 == null ^ node2 == null) return false;
+        if (node1 == null) return true;
+
+        return (node1.val == node2.val) && (treeEqual(node1.left, node2.left) && treeEqual(node2.right, node2.right));
+    }
 }
