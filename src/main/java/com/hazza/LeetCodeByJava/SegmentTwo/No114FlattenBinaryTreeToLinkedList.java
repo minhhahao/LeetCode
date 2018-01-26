@@ -30,12 +30,14 @@ public class No114FlattenBinaryTreeToLinkedList {
         return node;
     }
 
+    // solution 2
     public void flatten1(TreeNode root) {
         if (root == null) return;
         TreeNode cur = root;
         while (cur != null) {
             if (cur.left != null) {
                 TreeNode prev = cur.left;
+                // find the previous node
                 while (prev.right != null) prev = prev.right;
                 prev.right = cur.right;
                 cur.right = cur.left;
@@ -44,7 +46,8 @@ public class No114FlattenBinaryTreeToLinkedList {
             cur = cur.right;
         }
     }
-        // solution 3
+
+    // solution 3
     public void flatten2(TreeNode root) {
         if (root == null) return;
         Deque<TreeNode> stack = new ArrayDeque<>();
@@ -53,7 +56,6 @@ public class No114FlattenBinaryTreeToLinkedList {
             TreeNode cur = stack.pop();
             if (cur.right != null) stack.push(cur.right);
             if (cur.left != null) stack.push(cur.left);
-            // find the previous node
             if (!stack.isEmpty()) cur.right = stack.peek();
             cur.left = null;
         }
