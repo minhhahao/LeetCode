@@ -2,6 +2,7 @@ package com.hazza.LeetCodeByJava.util;
 
 import java.util.List;
 import java.util.Objects;
+import java.util.Random;
 
 /**
  * Created with IntelliJ IDEA.
@@ -17,6 +18,15 @@ public class Utils {
         for (List<Integer> l : list)
             for (Object o : l)
                 sb.append(o + " ");
+
+        return sb.toString();
+    }
+
+    public static String getRandomStr(int len) {
+        Random random = new Random();
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < len; i++)
+            sb.append((char)(random.nextInt(26) + 97));
 
         return sb.toString();
     }
