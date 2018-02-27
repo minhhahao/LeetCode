@@ -1,5 +1,6 @@
 package com.hazza.LeetCodeByJava.util;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.Objects;
 import java.util.Random;
@@ -13,11 +14,21 @@ import java.util.Random;
  * Time: 5:09 PM
  */
 public class Utils {
-    public static String doubleList2Str(List<List<Integer>> list) {
+    public static <T> String list2Str(List<T> list) {
         StringBuffer sb = new StringBuffer();
-        for (List<Integer> l : list)
-            for (Object o : l)
+        for (T o: list)
+            sb.append(o + " ");
+
+        return sb.toString();
+    }
+
+    public static <T> String doubleList2Str(List<List<T>> list) {
+        StringBuffer sb = new StringBuffer();
+        for (List<T> l : list) {
+            for (T o : l)
                 sb.append(o + " ");
+            sb.append("| ");
+        }
 
         return sb.toString();
     }
@@ -31,4 +42,11 @@ public class Utils {
         return sb.toString();
     }
 
+    public static class doubleListComp<T> implements Comparator<List<T>> {
+
+        @Override
+        public int compare(List<T> ts, List<T> t1) {
+            return list2Str(ts).compareTo(list2Str(t1));
+        }
+    }
 }
