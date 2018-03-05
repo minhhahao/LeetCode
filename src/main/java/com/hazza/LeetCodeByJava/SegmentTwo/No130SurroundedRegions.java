@@ -1,5 +1,7 @@
 package com.hazza.LeetCodeByJava.SegmentTwo;
 
+import java.util.HashMap;
+
 /**
  * Created with IntelliJ IDEA.
  * Description: https://leetcode.com/problems/surrounded-regions/description/
@@ -39,6 +41,5 @@ public class No130SurroundedRegions {
             for (int j = 0; j < colLen; j++)
                 if (board[i][j] == 'O') board[i][j] = 'X';
                 else if (board[i][j] == '*') board[i][j] = 'O';
-
     }
 }
