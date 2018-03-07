@@ -9,7 +9,7 @@ import java.util.Queue;
 
 /**
  * Created with IntelliJ IDEA.
- * Description:
+ * Description: https://leetcode.com/problems/clone-graph/description/
  * User: HazzaCheng
  * Contact: hazzacheng@gmail.com
  * Date: 18-3-7
