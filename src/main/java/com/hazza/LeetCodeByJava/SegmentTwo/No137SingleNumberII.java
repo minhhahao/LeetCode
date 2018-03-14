@@ -25,7 +25,7 @@ public class No137SingleNumberII {
     }
 
 
-        // solution 2
+    // solution 2
     public int singleNumber1(int[] nums) {
         int ones = 0, twos = 0;
 
