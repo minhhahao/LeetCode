@@ -1,8 +1,5 @@
 package com.hazza.LeetCodeByJava.SegmentTwo;
 
-import java.util.HashSet;
-import java.util.Set;
-
 /**
  * Created with IntelliJ IDEA.
  * Description: https://leetcode.com/problems/single-number/description/
