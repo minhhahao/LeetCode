@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * Created with IntelliJ IDEA.
  * Description: https://leetcode.com/problems/binary-tree-postorder-traversal/description/
- * User: HazzaCheng
+ * @author hazzacheng
  * Contact: hazzacheng@gmail.com
  * Date: 18-3-23
  * Time: 8:36 AM
@@ -25,7 +25,8 @@ public class No145BinaryTreePostorderTraversal {
         while (!stack.isEmpty() || node != null) {
             if (node != null) {
                 stack.push(node);
-                res.addFirst(node.val); // reverse the pre order
+                // reverse the pre order
+                res.addFirst(node.val);
                 node = node.right;
             } else {
                 node = stack.pop();
