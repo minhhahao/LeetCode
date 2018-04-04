@@ -17,7 +17,7 @@ import java.util.Map;
 public class No149MaxPointsOnALine {
 
     private int gcd(int a, int b) {
-        while (b > 0) {
+        while (b != 0) {
             int temp = a;
             a = b;
             b = temp % b;
