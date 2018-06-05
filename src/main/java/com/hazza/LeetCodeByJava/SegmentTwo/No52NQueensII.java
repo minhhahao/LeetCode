@@ -27,6 +27,7 @@ public class No52NQueensII {
                 queens.remove(col);
             }
         }
+
         return count;
     }
 
