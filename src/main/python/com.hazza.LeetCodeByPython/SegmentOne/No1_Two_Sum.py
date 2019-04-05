@@ -5,16 +5,18 @@
 from typing import List
 
 
-def twoSum(self, nums: List[int], target: int) -> List[int]:
-    map = {}
-    for i, num in enumerate(nums):
-        if target - num in map:
-            return [map[target - num], i]
-        map[num] = i
+class Solution:
+    def twoSum(self, nums: List[int], target: int) -> List[int]:
+        map = {}
+        for i, num in enumerate(nums):
+            if target - num in map:
+                return [map[target - num], i]
+            map[num] = i
 
-    return []
+        return []
 
 
 if __name__ == '__main__':
+    solution = Solution()
     nums = [2, 7, 11, 15]
-    print(twoSum(None, nums, 9))
+    assert solution.twoSum(nums, 9) == [0, 1]
