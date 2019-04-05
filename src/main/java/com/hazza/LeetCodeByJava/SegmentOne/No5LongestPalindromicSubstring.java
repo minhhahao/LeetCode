@@ -1,4 +1,4 @@
-package com.hazza.LeetCodeByJava.SegmentOne;
+package com.hazza.Leetfbc6539b3310ff0a3c03f3f29f8fbd987c2dbd7fCodeByJava.SegmentOne;
 
 /**
  * https://leetcode.com/problems/longest-palindromic-substring/#/description
@@ -45,9 +45,9 @@ public class No5LongestPalindromicSubstring {
     }
 
     public boolean isPalindrome(String s, int begin, int end){
-        if(begin<0) return false;
-        while(begin<end){
-            if(s.charAt(begin++)!=s.charAt(end--)) return false;
+        if(begin < 0) return false;
+        while(begin < end){
+            if(s.charAt(begin++) != s.charAt(end--)) return false;
         }
         return true;
     }
