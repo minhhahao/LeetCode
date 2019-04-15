@@ -20,4 +20,4 @@ class Solution:
 
 if __name__ == '__main__':
     solution = Solution()
-    assert solution.letterCombinations('23').sort() == ["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"].sort()
+    assert sorted(solution.letterCombinations('23')) == sorted(["ad", "ae", "af", "bd", "be", "bf", "cd", "ce", "cf"])
