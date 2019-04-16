@@ -2,8 +2,7 @@
 # -*- coding: utf-8 -*-
 # Created by HazzaCheng on 2019/4/2 19:16
 # https://leetcode.com/problems/add-two-numbers/
-
-from ListNode import ListNode, makeListNode, printListNode
+from src.main.python.com.hazza.LeetCodeByPython.dataStructure.ListNode import ListNode, makeListNode, printListNode
 
 
 class Solution:
