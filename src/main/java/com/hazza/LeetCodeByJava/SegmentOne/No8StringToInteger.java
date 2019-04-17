@@ -9,11 +9,11 @@ public class No8StringToInteger {
         //空字符串
         if (str.length() == 0) return 0;
         //去除空格
-        while (str.charAt(index) == ' ' && index < str.length()) {
+        while (index < str.length() && str.charAt(index) == ' ') {
             ++index;
         }
         //去除正负号
-        if(str.charAt(index) == '+' || str.charAt(index) == '-'){
+        if(index < str.length() && (str.charAt(index) == '+' || str.charAt(index) == '-')){
             sign = str.charAt(index) == '+' ? 1 : -1;
             index ++;
         }
