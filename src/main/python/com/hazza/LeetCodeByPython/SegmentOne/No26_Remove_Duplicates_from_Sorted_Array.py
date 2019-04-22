@@ -15,7 +15,6 @@ class Solution:
             if nums[i] != nums[i - 1]:
                 nums[cnt] = nums[i]
                 cnt += 1
-            i += 1
 
         return cnt
 
