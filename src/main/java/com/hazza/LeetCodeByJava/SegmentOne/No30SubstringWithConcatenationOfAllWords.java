@@ -52,7 +52,7 @@ public class No30SubstringWithConcatenationOfAllWords {
                 //判断words里出现的字符串是否是连续出现的
                 while (currentCount == 0 && left < right) {
                     int target = occurances[left];
-                    //--tabel[1][target]是因为left最后要左移
+                    //--tabel[1][target]是因为left最后要右移
                     if (target != -1 && --tabel[1][target] == tabel[0][target] - 1) {
                         int length = right - left;
                         if (length / lenW == lenWs) res.add(left);
