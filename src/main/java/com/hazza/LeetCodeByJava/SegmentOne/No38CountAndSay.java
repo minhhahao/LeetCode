@@ -23,7 +23,7 @@ public class No38CountAndSay {
         return res.toString();
     }
 
-    //Solution 1
+    //Solution 2
     public String countAndSay2(int n) {
         StringBuilder curr = new StringBuilder("1");
         StringBuilder prev = new StringBuilder();
