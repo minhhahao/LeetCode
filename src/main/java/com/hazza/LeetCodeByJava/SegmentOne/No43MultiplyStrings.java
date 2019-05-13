@@ -21,7 +21,7 @@ public class No43MultiplyStrings {
         }
         // remove the leading zero
         for (int i: num)
-            if (!(sb.length() == 0 && i ==0)) sb.append(i);
+            if (!(sb.length() == 0 && i == 0)) sb.append(i);
 
         return sb.length() == 0 ? "0" : sb.toString();
     }
