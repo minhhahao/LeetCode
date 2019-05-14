@@ -28,7 +28,7 @@ public class No44WildcardMatching {
         return pi == lenP;
     }
 
-    // solution 2
+    // solution 2.1
     public boolean isMatch2(String s, String p) {
         if (p.length() == 0) return s.length() == 0;
         int lenS = s.length(), lenP = p.length();
@@ -49,6 +49,7 @@ public class No44WildcardMatching {
         return m[lenS][lenP];
     }
 
+    // solution 2.2
     public boolean isMatch3(String s, String p) {
         if (p.length() == 0) return s.length() == 0;
         int lenS = s.length(), lenP = p.length();
