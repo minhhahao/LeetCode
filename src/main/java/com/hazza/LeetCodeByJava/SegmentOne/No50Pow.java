@@ -30,9 +30,4 @@ public class No50Pow {
         if (n % 2 == 0) return myPow2(myPow2(x, n / 2), 2);
         else return x * myPow(myPow2(x, n / 2), 2);
     }
-
-
-
-
-
 }
