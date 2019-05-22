@@ -15,6 +15,7 @@ class Solution:
 
         return totalMax
 
+
 if __name__ == '__main__':
     solution = Solution()
 
