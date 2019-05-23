@@ -52,6 +52,4 @@ public class No52NQueensII {
         }
         return count;
     }
-
-
 }
