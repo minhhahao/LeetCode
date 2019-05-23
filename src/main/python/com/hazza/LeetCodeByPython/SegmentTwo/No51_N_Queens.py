@@ -21,12 +21,10 @@ class Solution:
 
         for x in range(n):
             if x not in queens and (
-                    x -
-                    y) not in xy_dif and (
-                    x +
-                    y) not in xy_sum:
-                self.dfs(n, queens + [x], xy_dif +
-                         [x - y], xy_sum + [x + y], res)
+                    x - y) not in xy_dif and (
+                    x + y) not in xy_sum:
+                self.dfs(n, queens + [x], xy_dif + [x - y],
+                         xy_sum + [x + y], res)
 
 
 if __name__ == '__main__':
