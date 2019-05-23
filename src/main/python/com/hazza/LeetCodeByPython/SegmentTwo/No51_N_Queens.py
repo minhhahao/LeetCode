@@ -10,7 +10,8 @@ class Solution:
         res = []
         self.dfs(n, [], [], [], res)
 
-        return [['.' * i + 'Q' + '.' * (n - i - 1) for i in rows]for rows in res]
+        return [['.' * i + 'Q' + '.' * (n - i - 1)
+                 for i in rows]for rows in res]
 
     def dfs(self, n, queens, xy_dif, xy_sum, res):
         y = len(queens)
@@ -19,8 +20,13 @@ class Solution:
             return
 
         for x in range(n):
-            if x not in queens and (x - y) not in xy_dif and (x + y) not in xy_sum:
-                self.dfs(n, queens + [x], xy_dif + [x - y], xy_sum + [x + y], res)
+            if x not in queens and (
+                    x -
+                    y) not in xy_dif and (
+                    x +
+                    y) not in xy_sum:
+                self.dfs(n, queens + [x], xy_dif +
+                         [x - y], xy_sum + [x + y], res)
 
 
 if __name__ == '__main__':
