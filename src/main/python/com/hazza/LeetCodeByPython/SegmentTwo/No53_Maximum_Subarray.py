@@ -19,4 +19,4 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
 
-    assert solution.maxSubArray([-2,1,-3,4,-1,2,1,-5,4]) == 6
+    assert solution.maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]) == 6
