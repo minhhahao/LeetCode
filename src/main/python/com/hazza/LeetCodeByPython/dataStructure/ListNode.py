@@ -23,3 +23,4 @@ def printListNode(node):
     while node is not None:
         print(node.val)
         node = node.next
+    print()
