@@ -6,6 +6,7 @@ from typing import List
 
 
 class Solution:
+    # solution 1
     def plusOne1(self, digits: List[int]) -> List[int]:
         for i in range(len(digits))[::-1]:
             digits[i] += 1
@@ -16,6 +17,7 @@ class Solution:
 
         return [1] + digits
 
+    # solution 2
     def plusOne2(self, digits: List[int]) -> List[int]:
         if len(digits) == 0:
             digits = [1]
