@@ -21,8 +21,6 @@ class Solution:
 if __name__ == '__main__':
     solution = Solution()
 
-    print(solution.simplifyPath('/home/'))
-
     assert solution.simplifyPath('/home/') == '/home'
     assert solution.simplifyPath('/../') == '/'
     assert solution.simplifyPath('/...') == '/...'
