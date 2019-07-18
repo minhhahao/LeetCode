@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Created by HazzaCheng on 2019/4/16 20:15
 # https://leetcode.com/problems/remove-nth-node-from-end-of-list/
-from src.main.python.com.hazza.LeetCodeByPython.dataStructure.ListNode import ListNode, makeListNode, printListNode
+from src.main.python.com.hazza.LeetCodeByPython.data_structure.ListNode import ListNode, makeListNode, printListNode
 
 
 class Solution:

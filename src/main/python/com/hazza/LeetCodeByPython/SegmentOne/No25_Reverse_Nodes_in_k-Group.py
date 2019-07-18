@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Created by HazzaCheng on 2019/4/21 20:01
 # https://leetcode.com/problems/reverse-nodes-in-k-group/
-from src.main.python.com.hazza.LeetCodeByPython.dataStructure.ListNode import ListNode, makeListNode, printListNode
+from src.main.python.com.hazza.LeetCodeByPython.data_structure.ListNode import ListNode, makeListNode, printListNode
 
 
 class Solution:

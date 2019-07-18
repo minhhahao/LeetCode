@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 # Created by HazzaCheng on 2019/4/17 20:22
 # https://leetcode.com/problems/merge-two-sorted-lists/
-from src.main.python.com.hazza.LeetCodeByPython.dataStructure.ListNode import ListNode, makeListNode, printListNode
+from src.main.python.com.hazza.LeetCodeByPython.data_structure.ListNode import ListNode, makeListNode, printListNode
 
 
 class Solution:

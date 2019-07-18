@@ -5,7 +5,7 @@
 from heapq import heapify, heappop, heapreplace
 from typing import List
 
-from src.main.python.com.hazza.LeetCodeByPython.dataStructure.ListNode import ListNode, makeListNode, printListNode
+from src.main.python.com.hazza.LeetCodeByPython.data_structure.ListNode import ListNode, makeListNode, printListNode
 
 
 class Solution:
