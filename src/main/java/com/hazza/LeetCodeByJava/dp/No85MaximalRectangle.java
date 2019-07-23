@@ -1,4 +1,4 @@
-package com.hazza.LeetCodeByJava.SegmentTwo;
+package com.hazza.LeetCodeByJava.dp;
 
 import java.util.Arrays;
 import java.util.Stack;
