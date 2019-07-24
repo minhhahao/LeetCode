@@ -1,4 +1,4 @@
-package com.hazza.LeetCodeByJava.SegmentTwo;
+package com.hazza.LeetCodeByJava.stack;
 
 import com.hazza.LeetCodeByJava.datastructure.SegmentTree;
 import org.omg.CORBA.MARSHAL;
