@@ -1,4 +1,4 @@
-package com.hazza.LeetCodeByJava.SegmentTwo;
+package com.hazza.LeetCodeByJava.dfs;
 
 /**
  * Created with IntelliJ IDEA.
