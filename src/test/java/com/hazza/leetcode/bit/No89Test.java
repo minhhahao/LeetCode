@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentOneTest;
+package com.hazza.leetcode.bit;
 
-import com.hazza.leetcode.SegmentTwo.No89GrayCode;
+import com.hazza.leetcode.bit.No89GrayCode;
 import org.junit.Before;
 import org.junit.Test;
 

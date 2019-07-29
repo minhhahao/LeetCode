@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentTwo;
+package com.hazza.leetcode.bit;
 
 import java.util.LinkedList;
 import java.util.List;
