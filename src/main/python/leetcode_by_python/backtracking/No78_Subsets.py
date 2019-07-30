@@ -40,22 +40,3 @@ class Solution:
 
         return res
 
-
-if __name__ == '__main__':
-    solution = Solution()
-
-    input = [1, 2, 3]
-    expected = sorted([
-        [3],
-        [1],
-        [2],
-        [1, 2, 3],
-        [1, 3],
-        [2, 3],
-        [1, 2],
-        []
-    ])
-
-    assert sorted(solution.subsets1(input)) == expected
-    assert sorted(solution.subsets2(input)) == expected
-    assert sorted(solution.subsets3(input)) == expected
