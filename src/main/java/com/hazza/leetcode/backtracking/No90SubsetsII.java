@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentTwo;
+package com.hazza.leetcode.backtracking;
 
 import java.util.ArrayList;
 import java.util.Arrays;
