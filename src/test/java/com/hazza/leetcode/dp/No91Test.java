@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentOneTest;
+package com.hazza.leetcode.dp;
 
-import com.hazza.leetcode.SegmentTwo.No91DecodeWays;
+import com.hazza.leetcode.dp.No91DecodeWays;
 import org.junit.Before;
 import org.junit.Test;
 
