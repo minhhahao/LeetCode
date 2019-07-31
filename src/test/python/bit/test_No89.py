@@ -3,7 +3,7 @@
 # Created by HazzaCheng on 2019-07-29
 import unittest
 
-from src.main.python.bit.No89_Gray_Code import Solution
+from src.main.python.leetcode_by_python.bit.No89_Gray_Code import Solution
 
 
 class MyTestCase(unittest.TestCase):
