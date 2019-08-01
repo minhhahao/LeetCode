@@ -21,10 +21,10 @@ class MyTestCase(unittest.TestCase):
         ]
 
         res1 = self.solution.subsetsWithDup1([1, 2, 2])
-        assert sorted(res1) == sorted(expected)
+        self.assertEqual(sorted(res1), sorted(expected))
 
         res2 = self.solution.subsetsWithDup2([1, 2, 2])
-        assert sorted(res2) == sorted(expected)
+        self.assertEqual(sorted(res2), sorted(expected))
 
 
 if __name__ == '__main__':

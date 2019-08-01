@@ -23,9 +23,9 @@ class MyTestCase(unittest.TestCase):
             []
         ])
 
-        assert sorted(self.solution.subsets1(input)) == expected
-        assert sorted(self.solution.subsets2(input)) == expected
-        assert sorted(self.solution.subsets3(input)) == expected
+        self.assertEqual(sorted(self.solution.subsets1(input)), expected)
+        self.assertEqual(sorted(self.solution.subsets2(input)), expected)
+        self.assertEqual(sorted(self.solution.subsets3(input)), expected)
 
 
 if __name__ == '__main__':

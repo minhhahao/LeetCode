@@ -11,7 +11,7 @@ class MyTestCase(unittest.TestCase):
         nums1 = [1, 2, 3, 0, 0, 0]
         nums2 = [2, 5, 6]
         self.solution.merge(nums1, 3, nums2, 3)
-        assert nums1 == [1, 2, 2, 3, 5, 6]
+        self.assertEqual(nums1, [1, 2, 2, 3, 5, 6])
 
 
 if __name__ == '__main__':

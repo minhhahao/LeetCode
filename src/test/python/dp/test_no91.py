@@ -11,9 +11,9 @@ class MyTestCase(unittest.TestCase):
         self.solution = Solution()
 
     def test(self):
-        assert self.solution.numDecodings("10") == 1
-        assert self.solution.numDecodings("12") == 2
-        assert self.solution.numDecodings("226") == 3
+        self.assertEqual(self.solution.numDecodings("10"), 1)
+        self.assertEqual(self.solution.numDecodings("12"), 2)
+        self.assertEqual(self.solution.numDecodings("226"), 3)
 
 
 if __name__ == '__main__':

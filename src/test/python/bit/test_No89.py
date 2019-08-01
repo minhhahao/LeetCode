@@ -11,9 +11,8 @@ class MyTestCase(unittest.TestCase):
         self.solution = Solution()
 
     def test(self):
-        assert self.solution.grayCode(0) == [0]
-        print(self.solution.grayCode(2))
-        assert self.solution.grayCode(2) in [[0, 1, 3, 2], [0, 2, 3, 1]]
+        self.assertEqual(self.solution.grayCode(0), [0])
+        self.assertTrue(self.solution.grayCode(2) in [[0, 1, 3, 2], [0, 2, 3, 1]])
 
 
 if __name__ == '__main__':
