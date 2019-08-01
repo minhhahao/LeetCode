@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentOneTest;
+package com.hazza.leetcode.linkedlist;
 
-import com.hazza.leetcode.SegmentTwo.No92ReverseLinkedListII;
+import com.hazza.leetcode.linkedlist.No92ReverseLinkedListII;
 import com.hazza.leetcode.datastructure.ListNode;
 import org.junit.Before;
 import org.junit.Test;

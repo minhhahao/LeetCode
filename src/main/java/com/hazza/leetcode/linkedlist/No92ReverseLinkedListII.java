@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentTwo;
+package com.hazza.leetcode.linkedlist;
 
 import com.hazza.leetcode.datastructure.ListNode;
 
