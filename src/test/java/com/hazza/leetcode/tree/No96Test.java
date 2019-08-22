@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentOneTest;
+package com.hazza.leetcode.tree;
 
-import com.hazza.leetcode.SegmentTwo.No96UniqueBinarySearchTrees;
+import com.hazza.leetcode.tree.No96UniqueBinarySearchTrees;
 import org.junit.Before;
 import org.junit.Test;
 

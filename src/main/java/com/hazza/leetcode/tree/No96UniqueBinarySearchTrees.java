@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentTwo;
+package com.hazza.leetcode.tree;
 
 /**
  * Created with IntelliJ IDEA.
