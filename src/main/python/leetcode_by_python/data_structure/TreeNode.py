@@ -10,7 +10,7 @@ class TreeNode:
         self.right = None
 
 
-def printBinaryTree(root, depth):
+def printBinaryTree(root, depth=0):
     if root:
         print("Level {}: {}".format(depth, root.val))
         printBinaryTree(root.left, depth + 1)
@@ -31,10 +31,10 @@ def createBinaryTree(preOrder, inOrder):
     return node
 
 
-def isBinaryEqual(n1, n2):
-    if n1 is None ^ n2 is None:
+def isBinaryTreeEqual(n1, n2):
+    if (n1 is None) ^ (n2 is None):
         return False
     if not n1:
         return True
 
-    return n1.val == n2.val and isBinaryEqual(n1.left, n2.left) and isBinaryEqual(n1.right, n2.right)
+    return n1.val == n2.val and isBinaryTreeEqual(n1.left, n2.left) and isBinaryTreeEqual(n1.right, n2.right)
