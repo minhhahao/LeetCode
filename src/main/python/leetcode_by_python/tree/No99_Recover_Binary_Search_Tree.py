@@ -15,6 +15,7 @@ class Solution:
     def recoverTree1(self, root: TreeNode) -> None:
         if not root:
             return
+        self.firstNode, self.secondNode, self.prevNode = None, None, TreeNode(-sys.maxsize - 1)
         self.dfs(root)
         self.firstNode.val, self.secondNode.val = self.secondNode.val, self.firstNode.val
 

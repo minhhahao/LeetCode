@@ -17,9 +17,19 @@ class MyTestCase(unittest.TestCase):
         self.solution.recoverTree1(root)
         self.assertTrue(isBinaryTreeEqual(root, expected))
 
+        root = createBinaryTree([3, 1, 4, 2], [1, 3, 2, 4])
+        expected = createBinaryTree([2, 1, 4, 3], [1, 2, 3, 4])
+        self.solution.recoverTree1(root)
+        self.assertTrue(isBinaryTreeEqual(root, expected))
+
     def testSolution2(self):
         root = createBinaryTree([1, 3, 2], [3, 2, 1])
         expected = createBinaryTree([3, 1, 2], [1, 2, 3])
+        self.solution.recoverTree2(root)
+        self.assertTrue(isBinaryTreeEqual(root, expected))
+
+        root = createBinaryTree([3, 1, 4, 2], [1, 3, 2, 4])
+        expected = createBinaryTree([2, 1, 4, 3], [1, 2, 3, 4])
         self.solution.recoverTree2(root)
         self.assertTrue(isBinaryTreeEqual(root, expected))
 
