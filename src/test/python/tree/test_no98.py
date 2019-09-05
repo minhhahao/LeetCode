@@ -44,7 +44,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.solution.isValidBST2(root), False)
 
 
-
-
 if __name__ == '__main__':
     unittest.main()
