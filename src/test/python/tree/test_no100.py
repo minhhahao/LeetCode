@@ -25,3 +25,5 @@ class MyTestCase(unittest.TestCase):
         self.assertEqual(self.solution.isSameTree(tree1, tree2), False)
 
 
+if __name__ == '__main__':
+    unittest.main()
