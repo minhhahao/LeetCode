@@ -1,7 +1,7 @@
 package com.hazza.leetcode.tree;
 
-import com.hazza.leetcode.SegmentThree.No101SymmetricTree;
 import com.hazza.leetcode.datastructure.TreeNode;
+import com.hazza.leetcode.tree.No101SymmetricTree;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -17,7 +17,7 @@ import static junit.framework.TestCase.assertTrue;
  * Time: 6:26 PM
  */
 public class No101Test {
-    No101SymmetricTree test = new No101SymmetricTree();
+    No101SymmetricTree test;
 
     @Before
     public void setUp() {
