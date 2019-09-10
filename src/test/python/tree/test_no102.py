@@ -20,10 +20,6 @@ class MyTestCase(unittest.TestCase):
         ]
         self.assertEqual(self.solution.levelOrder(tree), expected)
 
-    # def testSolution2(self):
-    #     tree = createBinaryTree([3, 9, 20, 15, 7], [9, 3, 15, 20, 7])
-    #     self.assertEqual(self.solution.levelOrder2(tree), True)
-
 
 if __name__ == '__main__':
     unittest.main()
