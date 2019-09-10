@@ -12,10 +12,10 @@ class Solution:
         if not root:
             return []
 
-        res, stack = [], [root]
-        while stack:
-            res.append([node.val for node in stack])
-            stack = [kid for node in stack for kid in (node.left, node.right) if kid]
+        res, level = [], [root]
+        while level:
+            res.append([node.val for node in level])
+            level = [kid for node in level for kid in (node.left, node.right) if kid]
 
         return res
 
