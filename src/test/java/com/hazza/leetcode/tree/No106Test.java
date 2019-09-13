@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentThreeTest;
+package com.hazza.leetcode.tree;
 
-import com.hazza.leetcode.SegmentThree.No106ConstructBinaryTreeFromInorderAndPostorderTraversal;
+import com.hazza.leetcode.tree.No106ConstructBinaryTreeFromInorderAndPostorderTraversal;
 import com.hazza.leetcode.datastructure.TreeNode;
 import org.junit.Before;
 import org.junit.Test;
