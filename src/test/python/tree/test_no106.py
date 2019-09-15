@@ -7,8 +7,6 @@ from src.main.python.leetcode_by_python.data_structure.TreeNode import createBin
 from src.main.python.leetcode_by_python.tree.No106_Construct_Binary_Tree_from_Inorder_and_Postorder_Traversal import \
     Solution
 
-Solution
-
 
 class MyTestCase(unittest.TestCase):
     def setUp(self) -> None:
