@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentThree;
+package com.hazza.leetcode.dp;
 
 /**
  * Created with IntelliJ IDEA.
