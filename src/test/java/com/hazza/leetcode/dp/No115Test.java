@@ -1,4 +1,4 @@
-package com.hazza.leetcode.tree;
+package com.hazza.leetcode.dp;
 
 import com.hazza.leetcode.dp.No115DistinctSubsequences;
 import com.hazza.leetcode.util.Utils;
