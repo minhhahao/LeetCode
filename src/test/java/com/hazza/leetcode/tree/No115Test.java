@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentThreeTest;
+package com.hazza.leetcode.tree;
 
 import com.hazza.leetcode.dp.No115DistinctSubsequences;
 import com.hazza.leetcode.util.Utils;
