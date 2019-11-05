@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentThree;
+package com.hazza.leetcode.array;
 
 import java.util.ArrayList;
 import java.util.List;
