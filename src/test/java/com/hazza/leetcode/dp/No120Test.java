@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentThreeTest;
+package com.hazza.leetcode.dp;
 
-import com.hazza.leetcode.SegmentThree.No120Triangle;
+import com.hazza.leetcode.dp.No120Triangle;
 import org.junit.Before;
 import org.junit.Test;
 
