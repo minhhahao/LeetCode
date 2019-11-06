@@ -32,4 +32,3 @@ class Solution:
                 dp[j] = min(dp[j], dp[j + 1]) + triangle[i][j]
 
         return dp[0]
-
