@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentThree;
+package com.hazza.leetcode.greedy;
 
 /**
  * Created with IntelliJ IDEA.
