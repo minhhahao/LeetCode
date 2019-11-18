@@ -1,6 +1,6 @@
-package com.hazza.leetcode.SegmentThreeTest;
+package com.hazza.leetcode.dp;
 
-import com.hazza.leetcode.SegmentThree.No123BestTimeToBuyAndSellStockIII;
+import com.hazza.leetcode.dp.No123BestTimeToBuyAndSellStockIII;
 import org.junit.Before;
 import org.junit.Test;
 
