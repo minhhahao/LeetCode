@@ -1,4 +1,4 @@
-package com.hazza.leetcode.SegmentThree;
+package com.hazza.leetcode.dfs;
 
 import com.hazza.leetcode.datastructure.TreeNode;
 
